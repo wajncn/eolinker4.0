@@ -4,7 +4,7 @@
 	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.eolinker.mapper.ApiHistoryMapper">
 	<insert id="addApiHistory" parameterType="ApiHistory" useGeneratedKeys="true"
-		keyProperty="valueID">
+		keyProperty="historyID">
 		INSERT INTO eo_api_history (eo_api_history.projectID,eo_api_history.groupID,eo_api_history.apiID,eo_api_history.historyJson,eo_api_history.updateDesc,eo_api_history.updateUserID,eo_api_history.updateTime,eo_api_history.isNow) 
 		VALUES (#{projectID},#{groupID},#{apiID},#{historyJson},#{updateDesc},#{updateUserID},#{updateTime},#{isNow});
 	</insert>

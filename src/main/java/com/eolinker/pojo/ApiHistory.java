@@ -19,6 +19,8 @@ import java.sql.Timestamp;
  * @package eolinker
  */
 public class ApiHistory {
+    private Integer historyID;
+
     private Integer projectID;//项目ID
     private Integer groupID;//分组ID
     private Integer apiID;//接口ID
@@ -26,6 +28,15 @@ public class ApiHistory {
     private String updateDesc;//更新描述
     private Integer updateUserID;//更新人员ID
     private Timestamp updateTime;//更新时间
+
+    public Integer getHistoryID() {
+        return historyID;
+    }
+
+    public void setHistoryID(Integer historyID) {
+        this.historyID = historyID;
+    }
+
     private Integer isNow;//是否当前版本
 
     public Integer getProjectID() {
