@@ -1,5 +1,7 @@
 package com.eolinker.dto;
 
+import lombok.*;
+
 /**
  * @author www.eolinker.com 广州银云信息科技有限公司 2015-2018
  * eoLinker是目前全球领先、国内最大的在线API接口管理平台，提供自动生成API文档、API自动化测试、Mock测试、团队协作等功能，旨在解决由于前后端分离导致的开发效率低下问题。
@@ -14,26 +16,11 @@ package com.eolinker.dto;
  * @link https://www.eolinker.com/
  * @package eolinker
  */
+@Data
 public class DatabaseDTO {
 
     private DatabaseInfoDTO databaseInfo;
     private DatabaseTableDTO[] tableList;
-
-    public DatabaseInfoDTO getDatabaseInfo() {
-        return databaseInfo;
-    }
-
-    public void setDatabaseInfo(DatabaseInfoDTO databaseInfo) {
-        this.databaseInfo = databaseInfo;
-    }
-
-    public DatabaseTableDTO[] getTableList() {
-        return tableList;
-    }
-
-    public void setTableList(DatabaseTableDTO[] tableList) {
-        this.tableList = tableList;
-    }
 
 
 }

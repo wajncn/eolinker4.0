@@ -1,5 +1,7 @@
 package com.eolinker.dto;
 
+import lombok.*;
+
 /**
  * @author www.eolinker.com 广州银云信息科技有限公司 2015-2018
  * eoLinker是目前全球领先、国内最大的在线API接口管理平台，提供自动生成API文档、API自动化测试、Mock测试、团队协作等功能，旨在解决由于前后端分离导致的开发效率低下问题。
@@ -14,6 +16,7 @@ package com.eolinker.dto;
  * @link https://www.eolinker.com/
  * @package eolinker
  */
+@Data
 public class DatabaseTableFieldDTO {
 
     private String fieldName;
@@ -23,63 +26,6 @@ public class DatabaseTableFieldDTO {
     private int isPrimaryKey;
     private String fieldDesc;
     private String defaultValue;
-
-
-    public String getFieldName() {
-        return fieldName;
-    }
-
-    public void setFieldName(String fieldName) {
-        this.fieldName = fieldName;
-    }
-
-    public int getFieldType() {
-        return fieldType;
-    }
-
-    public void setFieldType(int fieldType) {
-        this.fieldType = fieldType;
-    }
-
-    public int getFieldLength() {
-        return fieldLength;
-    }
-
-    public void setFieldLength(int fieldLength) {
-        this.fieldLength = fieldLength;
-    }
-
-    public int getIsNotNull() {
-        return isNotNull;
-    }
-
-    public void setIsNotNull(int isNotNull) {
-        this.isNotNull = isNotNull;
-    }
-
-    public int getIsPrimaryKey() {
-        return isPrimaryKey;
-    }
-
-    public void setIsPrimaryKey(int isPrimaryKey) {
-        this.isPrimaryKey = isPrimaryKey;
-    }
-
-    public String getFieldDesc() {
-        return fieldDesc;
-    }
-
-    public void setFieldDesc(String fieldDesc) {
-        this.fieldDesc = fieldDesc;
-    }
-
-    public String getDefaultValue() {
-        return defaultValue;
-    }
-
-    public void setDefaultValue(String defaultValue) {
-        this.defaultValue = defaultValue;
-    }
 
 
 }
