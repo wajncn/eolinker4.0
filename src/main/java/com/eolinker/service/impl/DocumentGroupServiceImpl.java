@@ -97,7 +97,7 @@ public class DocumentGroupServiceImpl implements DocumentGroupService {
 
                 ProjectOperationLog projectOperationLog = new ProjectOperationLog();
                 projectOperationLog.setOpProjectID(documentGroup.getProjectID());
-                projectOperationLog.setOpUerID(userID);
+                projectOperationLog.setOpUserID(userID);
                 projectOperationLog.setOpTarget(ProjectOperationLog.OP_TARGET_PROJECT_DOCUMENT_GROUP);
                 projectOperationLog.setOpTargetID(documentGroup.getGroupID());
                 projectOperationLog.setOpType(ProjectOperationLog.OP_TYPE_ADD);
@@ -123,7 +123,7 @@ public class DocumentGroupServiceImpl implements DocumentGroupService {
 
                 ProjectOperationLog projectOperationLog = new ProjectOperationLog();
                 projectOperationLog.setOpProjectID(documentGroup.getProjectID());
-                projectOperationLog.setOpUerID(userID);
+                projectOperationLog.setOpUserID(userID);
                 projectOperationLog.setOpTarget(ProjectOperationLog.OP_TARGET_PROJECT_DOCUMENT_GROUP);
                 projectOperationLog.setOpTargetID(documentGroup.getGroupID());
                 projectOperationLog.setOpType(ProjectOperationLog.OP_TYPE_ADD);
@@ -160,7 +160,7 @@ public class DocumentGroupServiceImpl implements DocumentGroupService {
         }
         ProjectOperationLog projectOperationLog = new ProjectOperationLog();
         projectOperationLog.setOpProjectID(projectID);
-        projectOperationLog.setOpUerID(userID);
+        projectOperationLog.setOpUserID(userID);
         projectOperationLog.setOpTarget(ProjectOperationLog.OP_TARGET_PROJECT_DOCUMENT_GROUP);
         projectOperationLog.setOpTargetID(groupID);
         projectOperationLog.setOpType(ProjectOperationLog.OP_TYPE_DELETE);
@@ -249,7 +249,7 @@ public class DocumentGroupServiceImpl implements DocumentGroupService {
         else {
             ProjectOperationLog projectOperationLog = new ProjectOperationLog();
             projectOperationLog.setOpProjectID(projectID);
-            projectOperationLog.setOpUerID(userID);
+            projectOperationLog.setOpUserID(userID);
             projectOperationLog.setOpTarget(ProjectOperationLog.OP_TARGET_PROJECT_DOCUMENT_GROUP);
             projectOperationLog.setOpTargetID(documentGroup.getGroupID());
             projectOperationLog.setOpType(ProjectOperationLog.OP_TYPE_UPDATE);
@@ -281,7 +281,7 @@ public class DocumentGroupServiceImpl implements DocumentGroupService {
 
                 ProjectOperationLog projectOperationLog = new ProjectOperationLog();
                 projectOperationLog.setOpProjectID(projectID);
-                projectOperationLog.setOpUerID(userID);
+                projectOperationLog.setOpUserID(userID);
                 projectOperationLog.setOpTarget(ProjectOperationLog.OP_TARGET_STATUS_CODE_GROUP);
                 projectOperationLog.setOpTargetID(projectID);
                 projectOperationLog.setOpType(ProjectOperationLog.OP_TYPE_UPDATE);
@@ -369,7 +369,7 @@ public class DocumentGroupServiceImpl implements DocumentGroupService {
 
             ProjectOperationLog projectOperationLog = new ProjectOperationLog();
             projectOperationLog.setOpProjectID(projectID);
-            projectOperationLog.setOpUerID(userID);
+            projectOperationLog.setOpUserID(userID);
             projectOperationLog.setOpTarget(ProjectOperationLog.OP_TARGET_PROJECT_DOCUMENT_GROUP);
             projectOperationLog.setOpTargetID(groupID);
             projectOperationLog.setOpType(ProjectOperationLog.OP_TYPE_OTHERS);
@@ -492,7 +492,7 @@ public class DocumentGroupServiceImpl implements DocumentGroupService {
 
         ProjectOperationLog projectOperationLog = new ProjectOperationLog();
         projectOperationLog.setOpProjectID(projectID);
-        projectOperationLog.setOpUerID(userID);
+        projectOperationLog.setOpUserID(userID);
         projectOperationLog.setOpTarget(ProjectOperationLog.OP_TARGET_PROJECT_DOCUMENT_GROUP);
         projectOperationLog.setOpTargetID(projectID);
         projectOperationLog.setOpType(ProjectOperationLog.OP_TYPE_OTHERS);

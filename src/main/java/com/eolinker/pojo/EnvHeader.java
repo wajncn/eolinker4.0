@@ -1,5 +1,7 @@
 package com.eolinker.pojo;
 
+import lombok.*;
+
 /**
  * 环境请求头部
  *
@@ -16,6 +18,7 @@ package com.eolinker.pojo;
  * @link https://www.eolinker.com/
  * @package eolinker
  */
+@Data
 public class EnvHeader {
 
     private Integer headerID;//请求头部ID
@@ -23,47 +26,6 @@ public class EnvHeader {
     private Integer applyProtocol;//请求协议
     private String headerName;//标签
     private String headerValue;//内容
-
-
-    public Integer getHeaderID() {
-        return headerID;
-    }
-
-    public void setHeaderID(Integer headerID) {
-        this.headerID = headerID;
-    }
-
-    public Integer getEnvID() {
-        return envID;
-    }
-
-    public void setEnvID(Integer envID) {
-        this.envID = envID;
-    }
-
-    public Integer getApplyProtocol() {
-        return applyProtocol;
-    }
-
-    public void setApplyProtocol(Integer applyProtocol) {
-        this.applyProtocol = applyProtocol;
-    }
-
-    public String getHeaderName() {
-        return headerName;
-    }
-
-    public void setHeaderName(String headerName) {
-        this.headerName = headerName;
-    }
-
-    public String getHeaderValue() {
-        return headerValue;
-    }
-
-    public void setHeaderValue(String headerValue) {
-        this.headerValue = headerValue;
-    }
 
 
 }

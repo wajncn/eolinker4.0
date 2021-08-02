@@ -1,5 +1,7 @@
 package com.eolinker.pojo;
 
+import lombok.*;
+
 import java.sql.Timestamp;
 
 /**
@@ -18,6 +20,7 @@ import java.sql.Timestamp;
  * @link https://www.eolinker.com/
  * @package eolinker
  */
+@Data
 public class AutomatedTestCase {
     private Integer caseID;//用例ID
     private Integer projectID;//项目ID
@@ -29,85 +32,5 @@ public class AutomatedTestCase {
     private Integer groupID;//分组ID
     private Integer caseType;//用例类型
     private String caseCode;//用例代码
-
-    public Integer getCaseID() {
-        return caseID;
-    }
-
-    public void setCaseID(Integer caseID) {
-        this.caseID = caseID;
-    }
-
-    public Integer getProjectID() {
-        return projectID;
-    }
-
-    public void setProjectID(Integer projectID) {
-        this.projectID = projectID;
-    }
-
-    public Integer getUserID() {
-        return userID;
-    }
-
-    public void setUserID(Integer userID) {
-        this.userID = userID;
-    }
-
-    public String getCaseName() {
-        return caseName;
-    }
-
-    public void setCaseName(String caseName) {
-        this.caseName = caseName;
-    }
-
-    public String getCaseDesc() {
-        return caseDesc;
-    }
-
-    public void setCaseDesc(String caseDesc) {
-        this.caseDesc = caseDesc;
-    }
-
-    public Timestamp getCreateTime() {
-        return createTime;
-    }
-
-    public void setCreateTime(Timestamp createTime) {
-        this.createTime = createTime;
-    }
-
-    public Timestamp getUpdateTime() {
-        return updateTime;
-    }
-
-    public void setUpdateTime(Timestamp updateTime) {
-        this.updateTime = updateTime;
-    }
-
-    public Integer getGroupID() {
-        return groupID;
-    }
-
-    public void setGroupID(Integer groupID) {
-        this.groupID = groupID;
-    }
-
-    public Integer getCaseType() {
-        return caseType;
-    }
-
-    public void setCaseType(Integer caseType) {
-        this.caseType = caseType;
-    }
-
-    public String getCaseCode() {
-        return caseCode;
-    }
-
-    public void setCaseCode(String caseCode) {
-        this.caseCode = caseCode;
-    }
 
 }

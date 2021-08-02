@@ -95,7 +95,7 @@ public class StatusCodeGroupServiceImpl implements StatusCodeGroupService {
                 if (affectedRow > 0) {
                     ProjectOperationLog projectOperationLog = new ProjectOperationLog();
                     projectOperationLog.setOpProjectID(statusCodeGroup.getProjectID());
-                    projectOperationLog.setOpUerID(userID);
+                    projectOperationLog.setOpUserID(userID);
                     projectOperationLog.setOpTarget(ProjectOperationLog.OP_TARGET_STATUS_CODE_GROUP);
                     projectOperationLog.setOpTargetID(statusCodeGroup.getGroupID());
                     projectOperationLog.setOpType(ProjectOperationLog.OP_TYPE_ADD);
@@ -114,7 +114,7 @@ public class StatusCodeGroupServiceImpl implements StatusCodeGroupService {
 
                     ProjectOperationLog projectOperationLog = new ProjectOperationLog();
                     projectOperationLog.setOpProjectID(statusCodeGroup.getProjectID());
-                    projectOperationLog.setOpUerID(userID);
+                    projectOperationLog.setOpUserID(userID);
                     projectOperationLog.setOpTarget(ProjectOperationLog.OP_TARGET_STATUS_CODE_GROUP);
                     projectOperationLog.setOpTargetID(statusCodeGroup.getGroupID());
                     projectOperationLog.setOpType(ProjectOperationLog.OP_TYPE_ADD);
@@ -151,7 +151,7 @@ public class StatusCodeGroupServiceImpl implements StatusCodeGroupService {
 
             ProjectOperationLog projectOperationLog = new ProjectOperationLog();
             projectOperationLog.setOpProjectID(projectID);
-            projectOperationLog.setOpUerID(userID);
+            projectOperationLog.setOpUserID(userID);
             projectOperationLog.setOpTarget(ProjectOperationLog.OP_TARGET_STATUS_CODE_GROUP);
             projectOperationLog.setOpTargetID(groupID);
             projectOperationLog.setOpType(ProjectOperationLog.OP_TYPE_DELETE);
@@ -244,7 +244,7 @@ public class StatusCodeGroupServiceImpl implements StatusCodeGroupService {
         else {
             ProjectOperationLog projectOperationLog = new ProjectOperationLog();
             projectOperationLog.setOpProjectID(projectID);
-            projectOperationLog.setOpUerID(userID);
+            projectOperationLog.setOpUserID(userID);
             projectOperationLog.setOpTarget(ProjectOperationLog.OP_TARGET_STATUS_CODE_GROUP);
             projectOperationLog.setOpTargetID(statusCodeGroup.getGroupID());
             projectOperationLog.setOpType(ProjectOperationLog.OP_TYPE_UPDATE);
@@ -276,7 +276,7 @@ public class StatusCodeGroupServiceImpl implements StatusCodeGroupService {
 
                 ProjectOperationLog projectOperationLog = new ProjectOperationLog();
                 projectOperationLog.setOpProjectID(projectID);
-                projectOperationLog.setOpUerID(userID);
+                projectOperationLog.setOpUserID(userID);
                 projectOperationLog.setOpTarget(ProjectOperationLog.OP_TARGET_STATUS_CODE_GROUP);
                 projectOperationLog.setOpTargetID(projectID);
                 projectOperationLog.setOpType(ProjectOperationLog.OP_TYPE_UPDATE);
@@ -361,7 +361,7 @@ public class StatusCodeGroupServiceImpl implements StatusCodeGroupService {
 
             ProjectOperationLog projectOperationLog = new ProjectOperationLog();
             projectOperationLog.setOpProjectID(projectID);
-            projectOperationLog.setOpUerID(userID);
+            projectOperationLog.setOpUserID(userID);
             projectOperationLog.setOpTarget(ProjectOperationLog.OP_TARGET_STATUS_CODE_GROUP);
             projectOperationLog.setOpTargetID(groupID);
             projectOperationLog.setOpType(ProjectOperationLog.OP_TYPE_OTHERS);
@@ -474,7 +474,7 @@ public class StatusCodeGroupServiceImpl implements StatusCodeGroupService {
 
         ProjectOperationLog projectOperationLog = new ProjectOperationLog();
         projectOperationLog.setOpProjectID(projectID);
-        projectOperationLog.setOpUerID(userID);
+        projectOperationLog.setOpUserID(userID);
         projectOperationLog.setOpTarget(ProjectOperationLog.OP_TARGET_STATUS_CODE_GROUP);
         projectOperationLog.setOpTargetID(projectID);
         projectOperationLog.setOpType(ProjectOperationLog.OP_TYPE_OTHERS);

@@ -1,5 +1,7 @@
 package com.eolinker.pojo;
 
+import lombok.*;
+
 /**
  * 数据库表
  *
@@ -16,43 +18,12 @@ package com.eolinker.pojo;
  * @link https://www.eolinker.com/
  * @package eolinker
  */
+@Data
 public class DatabaseTable {
 
     private int dbID;//数据库ID
     private int tableID;//表ID
     private String tableName;//表名称
     private String tableDescription;//表描述
-
-    public int getDbID() {
-        return dbID;
-    }
-
-    public void setDbID(int dbID) {
-        this.dbID = dbID;
-    }
-
-    public int getTableID() {
-        return tableID;
-    }
-
-    public void setTableID(int tableID) {
-        this.tableID = tableID;
-    }
-
-    public String getTableName() {
-        return tableName;
-    }
-
-    public void setTableName(String tableName) {
-        this.tableName = tableName;
-    }
-
-    public String getTableDescription() {
-        return tableDescription;
-    }
-
-    public void setTableDescription(String tableDescription) {
-        this.tableDescription = tableDescription;
-    }
 
 }

@@ -90,7 +90,7 @@ public class DocumentServiceImpl implements DocumentService {
             else {
                 ProjectOperationLog projectOperationLog = new ProjectOperationLog();
                 projectOperationLog.setOpProjectID(projectID);
-                projectOperationLog.setOpUerID(userID);
+                projectOperationLog.setOpUserID(userID);
                 projectOperationLog.setOpTarget(ProjectOperationLog.OP_TARGET_PROJECT_DOCUMENT);
                 projectOperationLog.setOpTargetID(document.getDocumentID());
                 projectOperationLog.setOpType(ProjectOperationLog.OP_TYPE_ADD);
@@ -130,7 +130,7 @@ public class DocumentServiceImpl implements DocumentService {
 
             ProjectOperationLog projectOperationLog = new ProjectOperationLog();
             projectOperationLog.setOpProjectID(projectID);
-            projectOperationLog.setOpUerID(userID);
+            projectOperationLog.setOpUserID(userID);
             projectOperationLog.setOpTarget(ProjectOperationLog.OP_TARGET_PROJECT_DOCUMENT);
             projectOperationLog.setOpTargetID(document.getDocumentID());
             projectOperationLog.setOpType(ProjectOperationLog.OP_TYPE_DELETE);
@@ -259,7 +259,7 @@ public class DocumentServiceImpl implements DocumentService {
 
             ProjectOperationLog projectOperationLog = new ProjectOperationLog();
             projectOperationLog.setOpProjectID(projectID);
-            projectOperationLog.setOpUerID(userID);
+            projectOperationLog.setOpUserID(userID);
             projectOperationLog.setOpTargetID(0);
             projectOperationLog.setOpTarget(ProjectOperationLog.OP_TARGET_PROJECT_DOCUMENT);
             projectOperationLog.setOpType(ProjectOperationLog.OP_TYPE_DELETE);

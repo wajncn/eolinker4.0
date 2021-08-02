@@ -1,5 +1,7 @@
 package com.eolinker.pojo;
 
+import lombok.*;
+
 /**
  * 接口缓存bean
  *
@@ -16,6 +18,7 @@ package com.eolinker.pojo;
  * @link https://www.eolinker.com/
  * @package eolinker
  */
+@Data
 public class ApiCache {
     private Integer cacheID;//缓存ID
     private Integer projectID;//项目ID
@@ -25,59 +28,4 @@ public class ApiCache {
     private Integer starred;//接口星标状态
     private Integer updateUserID;//接口更新成员ID
 
-    public Integer getCacheID() {
-        return cacheID;
-    }
-
-    public void setCacheID(Integer cacheID) {
-        this.cacheID = cacheID;
-    }
-
-    public Integer getProjectID() {
-        return projectID;
-    }
-
-    public void setProjectID(Integer projectID) {
-        this.projectID = projectID;
-    }
-
-    public Integer getGroupID() {
-        return groupID;
-    }
-
-    public void setGroupID(Integer groupID) {
-        this.groupID = groupID;
-    }
-
-    public Integer getApiID() {
-        return apiID;
-    }
-
-    public void setApiID(Integer apiID) {
-        this.apiID = apiID;
-    }
-
-    public String getApiJson() {
-        return apiJson;
-    }
-
-    public void setApiJson(String apiJson) {
-        this.apiJson = apiJson;
-    }
-
-    public Integer getStarred() {
-        return starred;
-    }
-
-    public void setStarred(Integer starred) {
-        this.starred = starred;
-    }
-
-    public Integer getUpdateUserID() {
-        return updateUserID;
-    }
-
-    public void setUpdateUserID(Integer updateUserID) {
-        this.updateUserID = updateUserID;
-    }
 }

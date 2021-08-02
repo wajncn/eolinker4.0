@@ -1,5 +1,7 @@
 package com.eolinker.pojo;
 
+import lombok.Data;
+
 /**
  * 自动化测试单例
  *
@@ -16,6 +18,7 @@ package com.eolinker.pojo;
  * @link https://www.eolinker.com/
  * @package eolinker
  */
+@Data
 public class AutomatedTestCaseSingle {
     private Integer connID;//关联ID
     private Integer caseID;//用例ID
@@ -29,91 +32,4 @@ public class AutomatedTestCaseSingle {
     private Integer apiRequestType;//请求类型
     private Integer orderNumber;//排序
 
-    public Integer getConnID() {
-        return connID;
-    }
-
-    public void setConnID(Integer connID) {
-        this.connID = connID;
-    }
-
-    public Integer getCaseID() {
-        return caseID;
-    }
-
-    public void setCaseID(Integer caseID) {
-        this.caseID = caseID;
-    }
-
-    public String getCaseData() {
-        return caseData;
-    }
-
-    public void setCaseData(String caseData) {
-        this.caseData = caseData;
-    }
-
-    public String getCaseCode() {
-        return caseCode;
-    }
-
-    public void setCaseCode(String caseCode) {
-        this.caseCode = caseCode;
-    }
-
-    public String getStatusCode() {
-        return statusCode;
-    }
-
-    public void setStatusCode(String statusCode) {
-        this.statusCode = statusCode;
-    }
-
-    public Integer getMatchType() {
-        return matchType;
-    }
-
-    public void setMatchType(Integer matchType) {
-        this.matchType = matchType;
-    }
-
-    public String getMatchRule() {
-        return matchRule;
-    }
-
-    public void setMatchRule(String matchRule) {
-        this.matchRule = matchRule;
-    }
-
-    public String getApiURI() {
-        return apiURI;
-    }
-
-    public void setApiURI(String apiURI) {
-        this.apiURI = apiURI;
-    }
-
-    public Integer getApiRequestType() {
-        return apiRequestType;
-    }
-
-    public void setApiRequestType(Integer apiRequestType) {
-        this.apiRequestType = apiRequestType;
-    }
-
-    public Integer getOrderNumber() {
-        return orderNumber;
-    }
-
-    public void setOrderNumber(Integer orderNumber) {
-        this.orderNumber = orderNumber;
-    }
-
-    public String getApiName() {
-        return apiName;
-    }
-
-    public void setApiName(String apiName) {
-        this.apiName = apiName;
-    }
 }

@@ -74,7 +74,7 @@ public class AutomatedTestCaseServiceImpl implements AutomatedTestCaseService {
             projectOperationLog.setOpTargetID(automatedTestCase.getCaseID());
             projectOperationLog.setOpTime(nowTime);
             projectOperationLog.setOpType(ProjectOperationLog.OP_TYPE_ADD);
-            projectOperationLog.setOpUerID(automatedTestCase.getUserID());
+            projectOperationLog.setOpUserID(automatedTestCase.getUserID());
             projectOperationLogMapper.addProjectOperationLog(projectOperationLog);
             return automatedTestCase.getCaseID();
         } else {
@@ -101,7 +101,7 @@ public class AutomatedTestCaseServiceImpl implements AutomatedTestCaseService {
             projectOperationLog.setOpTargetID(automatedTestCase.getCaseID());
             projectOperationLog.setOpTime(nowTime);
             projectOperationLog.setOpType(ProjectOperationLog.OP_TYPE_UPDATE);
-            projectOperationLog.setOpUerID(automatedTestCase.getUserID());
+            projectOperationLog.setOpUserID(automatedTestCase.getUserID());
             projectOperationLogMapper.addProjectOperationLog(projectOperationLog);
             return true;
         } else {
@@ -186,7 +186,7 @@ public class AutomatedTestCaseServiceImpl implements AutomatedTestCaseService {
             projectOperationLog.setOpTargetID(projectID);
             projectOperationLog.setOpTime(updateTime);
             projectOperationLog.setOpType(ProjectOperationLog.OP_TYPE_DELETE);
-            projectOperationLog.setOpUerID(userID);
+            projectOperationLog.setOpUserID(userID);
             projectOperationLogMapper.addProjectOperationLog(projectOperationLog);
             return true;
         }

@@ -1,5 +1,7 @@
 package com.eolinker.pojo;
 
+import lombok.*;
+
 import java.sql.Date;
 
 /**
@@ -18,6 +20,7 @@ import java.sql.Date;
  * @link https://www.eolinker.com/
  * @package eolinker
  */
+@Data
 public class Database {
 
     private int dbID;//数据库ID
@@ -25,45 +28,5 @@ public class Database {
     private Double dbVersion;//数据库版本
     private Date dbUpdateTime;//更新时间
     private int dbType;//数据库类型
-
-    public int getDbID() {
-        return dbID;
-    }
-
-    public void setDbID(int dbID) {
-        this.dbID = dbID;
-    }
-
-    public String getDbName() {
-        return dbName;
-    }
-
-    public void setDbName(String dbName) {
-        this.dbName = dbName;
-    }
-
-    public Double getDbVersion() {
-        return dbVersion;
-    }
-
-    public void setDbVersion(Double dbVersion) {
-        this.dbVersion = dbVersion;
-    }
-
-    public Date getDbUpdateTime() {
-        return dbUpdateTime;
-    }
-
-    public void setDbUpdateTime(Date dbUpdateTime) {
-        this.dbUpdateTime = dbUpdateTime;
-    }
-
-    public int getDbType() {
-        return dbType;
-    }
-
-    public void setDbType(int dbType) {
-        this.dbType = dbType;
-    }
 
 }

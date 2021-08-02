@@ -161,7 +161,7 @@ public class EnvServiceImpl implements EnvService {
         if (envID > 0) {
             ProjectOperationLog projectOperationLog = new ProjectOperationLog();
             projectOperationLog.setOpProjectID(projectID);
-            projectOperationLog.setOpUerID(userID);
+            projectOperationLog.setOpUserID(userID);
             projectOperationLog.setOpTarget(ProjectOperationLog.OP_TARGET_ENVIRONMENT);
             projectOperationLog.setOpTargetID(envID);
             projectOperationLog.setOpType(ProjectOperationLog.OP_TYPE_ADD);
@@ -226,7 +226,7 @@ public class EnvServiceImpl implements EnvService {
         if (affectedRow > 0) {
             ProjectOperationLog projectOperationLog = new ProjectOperationLog();
             projectOperationLog.setOpProjectID(projectID);
-            projectOperationLog.setOpUerID(userID);
+            projectOperationLog.setOpUserID(userID);
             projectOperationLog.setOpTarget(ProjectOperationLog.OP_TARGET_ENVIRONMENT);
             projectOperationLog.setOpTargetID(envID);
             projectOperationLog.setOpType(ProjectOperationLog.OP_TYPE_ADD);

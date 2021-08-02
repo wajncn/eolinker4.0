@@ -1,5 +1,7 @@
 package com.eolinker.pojo;
 
+import lombok.*;
+
 /**
  * 数据库表字段
  *
@@ -16,6 +18,7 @@ package com.eolinker.pojo;
  * @link https://www.eolinker.com/
  * @package eolinker
  */
+@Data
 public class DatabaseTableField {
 
     private Integer fieldID;//字段ID
@@ -27,77 +30,5 @@ public class DatabaseTableField {
     private String fieldDescription;//字段描述
     private Integer tableID;//数据库表ID
     private String defaultValue;//默认值
-
-    public Integer getFieldID() {
-        return fieldID;
-    }
-
-    public void setFieldID(Integer fieldID) {
-        this.fieldID = fieldID;
-    }
-
-    public String getFieldName() {
-        return fieldName;
-    }
-
-    public void setFieldName(String fieldName) {
-        this.fieldName = fieldName;
-    }
-
-    public String getFieldType() {
-        return fieldType;
-    }
-
-    public void setFieldType(String fieldType) {
-        this.fieldType = fieldType;
-    }
-
-    public String getFieldLength() {
-        return fieldLength;
-    }
-
-    public void setFieldLength(String fieldLength) {
-        this.fieldLength = fieldLength;
-    }
-
-    public Integer getIsNotNull() {
-        return isNotNull;
-    }
-
-    public void setIsNotNull(Integer isNotNull) {
-        this.isNotNull = isNotNull;
-    }
-
-    public Integer getIsPrimaryKey() {
-        return isPrimaryKey;
-    }
-
-    public void setIsPrimaryKey(Integer isPrimaryKey) {
-        this.isPrimaryKey = isPrimaryKey;
-    }
-
-    public String getFieldDescription() {
-        return fieldDescription;
-    }
-
-    public void setFieldDescription(String fieldDescription) {
-        this.fieldDescription = fieldDescription;
-    }
-
-    public Integer getTableID() {
-        return tableID;
-    }
-
-    public void setTableID(Integer tableID) {
-        this.tableID = tableID;
-    }
-
-    public String getDefaultValue() {
-        return defaultValue;
-    }
-
-    public void setDefaultValue(String defaultValue) {
-        this.defaultValue = defaultValue;
-    }
 
 }

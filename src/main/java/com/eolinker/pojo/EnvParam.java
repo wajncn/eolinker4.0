@@ -1,5 +1,7 @@
 package com.eolinker.pojo;
 
+import lombok.*;
+
 /**
  * 环境全局变量
  *
@@ -16,44 +18,13 @@ package com.eolinker.pojo;
  * @link https://www.eolinker.com/
  * @package eolinker
  */
+@Data
 public class EnvParam {
 
     private Integer paramID;//参数ID
     private Integer envID;//环境ID
     private String paramKey;//参数名称
     private String paramValue;//参数值
-
-    public Integer getParamID() {
-        return paramID;
-    }
-
-    public void setParamID(Integer paramID) {
-        this.paramID = paramID;
-    }
-
-    public Integer getEnvID() {
-        return envID;
-    }
-
-    public void setEnvID(Integer envID) {
-        this.envID = envID;
-    }
-
-    public String getParamKey() {
-        return paramKey;
-    }
-
-    public void setParamKey(String paramKey) {
-        this.paramKey = paramKey;
-    }
-
-    public String getParamValue() {
-        return paramValue;
-    }
-
-    public void setParamValue(String paramValue) {
-        this.paramValue = paramValue;
-    }
 
 
 }

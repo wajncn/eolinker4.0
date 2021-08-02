@@ -1,5 +1,7 @@
 package com.eolinker.pojo;
 
+import lombok.*;
+
 import java.sql.Timestamp;
 
 /**
@@ -18,6 +20,7 @@ import java.sql.Timestamp;
  * @link https://www.eolinker.com/
  * @package eolinker
  */
+@Data
 public class ProjectOperationLog {
     public static Integer OP_TYPE_ADD = 0; //添加操作
     public static Integer OP_TYPE_UPDATE = 1;//更新操作
@@ -44,85 +47,4 @@ public class ProjectOperationLog {
     private Integer opTargetID;// 操作目标ID
     private String partnerNickName;//成员备注
     private String userNickName;//成员昵称
-
-    public Integer getOpID() {
-        return opID;
-    }
-
-    public void setOpID(Integer opID) {
-        this.opID = opID;
-    }
-
-    public Integer getOpType() {
-        return opType;
-    }
-
-    public void setOpType(Integer opType) {
-        this.opType = opType;
-    }
-
-    public Integer getOpUserID() {
-        return opUserID;
-    }
-
-    public void setOpUerID(Integer opUserID) {
-        this.opUserID = opUserID;
-    }
-
-    public String getOpDesc() {
-        return opDesc;
-    }
-
-    public void setOpDesc(String openDesc) {
-        this.opDesc = openDesc;
-    }
-
-    public Timestamp getOpTime() {
-        return opTime;
-    }
-
-    public void setOpTime(Timestamp opTime) {
-        this.opTime = opTime;
-    }
-
-    public Integer getOpProjectID() {
-        return opProjectID;
-    }
-
-    public void setOpProjectID(Integer opProjectID) {
-        this.opProjectID = opProjectID;
-    }
-
-    public Integer getOpTarget() {
-        return opTarget;
-    }
-
-    public void setOpTarget(Integer opTarget) {
-        this.opTarget = opTarget;
-    }
-
-    public Integer getOpTargetID() {
-        return opTargetID;
-    }
-
-    public void setOpTargetID(Integer opTargetID) {
-        this.opTargetID = opTargetID;
-    }
-
-    public String getPartnerNickName() {
-        return partnerNickName;
-    }
-
-    public void setPartnerNickName(String partnerNickName) {
-        this.partnerNickName = partnerNickName;
-    }
-
-    public String getUserNickName() {
-        return userNickName;
-    }
-
-    public void setUserNickName(String userNickName) {
-        this.userNickName = userNickName;
-    }
-
 }

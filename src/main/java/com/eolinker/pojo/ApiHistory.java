@@ -1,5 +1,7 @@
 package com.eolinker.pojo;
 
+import lombok.*;
+
 import java.sql.Timestamp;
 
 /**
@@ -18,6 +20,7 @@ import java.sql.Timestamp;
  * @link https://www.eolinker.com/
  * @package eolinker
  */
+@Data
 public class ApiHistory {
     private Integer historyID;
 
@@ -29,77 +32,6 @@ public class ApiHistory {
     private Integer updateUserID;//更新人员ID
     private Timestamp updateTime;//更新时间
 
-    public Integer getHistoryID() {
-        return historyID;
-    }
-
-    public void setHistoryID(Integer historyID) {
-        this.historyID = historyID;
-    }
-
     private Integer isNow;//是否当前版本
 
-    public Integer getProjectID() {
-        return projectID;
-    }
-
-    public void setProjectID(Integer projectID) {
-        this.projectID = projectID;
-    }
-
-    public Integer getGroupID() {
-        return groupID;
-    }
-
-    public void setGroupID(Integer groupID) {
-        this.groupID = groupID;
-    }
-
-    public Integer getApiID() {
-        return apiID;
-    }
-
-    public void setApiID(Integer apiID) {
-        this.apiID = apiID;
-    }
-
-    public String getHistoryJson() {
-        return historyJson;
-    }
-
-    public void setHistoryJson(String historyJson) {
-        this.historyJson = historyJson;
-    }
-
-    public String getUpdateDesc() {
-        return updateDesc;
-    }
-
-    public void setUpdateDesc(String updateDesc) {
-        this.updateDesc = updateDesc;
-    }
-
-    public Integer getUpdateUserID() {
-        return updateUserID;
-    }
-
-    public void setUpdateUserID(Integer updateUserID) {
-        this.updateUserID = updateUserID;
-    }
-
-    public Timestamp getUpdateTime() {
-        return updateTime;
-    }
-
-    public void setUpdateTime(Timestamp updateTime) {
-        this.updateTime = updateTime;
-    }
-
-    public Integer getIsNow() {
-        return isNow;
-    }
-
-    public void setIsNow(Integer isNow) {
-        this.isNow = isNow;
-    }
 }

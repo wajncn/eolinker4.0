@@ -1,5 +1,7 @@
 package com.eolinker.pojo;
 
+import lombok.*;
+
 import java.sql.Timestamp;
 
 /**
@@ -18,6 +20,7 @@ import java.sql.Timestamp;
  * @link https://www.eolinker.com/
  * @package eolinker
  */
+@Data
 public class TestHistory {
     private Integer testID;//测试历史ID
     private Integer apiID;//接口ID
@@ -26,51 +29,4 @@ public class TestHistory {
     private String resultInfo;//返回结果
     private Timestamp testTime;//测试时间
 
-    public Integer getTestID() {
-        return testID;
-    }
-
-    public void setTestID(Integer testID) {
-        this.testID = testID;
-    }
-
-    public Integer getApiID() {
-        return apiID;
-    }
-
-    public void setApiID(Integer apiID) {
-        this.apiID = apiID;
-    }
-
-    public Integer getProjectID() {
-        return projectID;
-    }
-
-    public void setProjectID(Integer projectID) {
-        this.projectID = projectID;
-    }
-
-    public String getRequestInfo() {
-        return requestInfo;
-    }
-
-    public void setRequestInfo(String requestInfo) {
-        this.requestInfo = requestInfo;
-    }
-
-    public String getResultInfo() {
-        return resultInfo;
-    }
-
-    public void setResultInfo(String resultInfo) {
-        this.resultInfo = resultInfo;
-    }
-
-    public Timestamp getTestTime() {
-        return testTime;
-    }
-
-    public void setTestTime(Timestamp testTime) {
-        this.testTime = testTime;
-    }
 }

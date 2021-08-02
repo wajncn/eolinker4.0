@@ -121,7 +121,7 @@ public class ProjectServiceImpl implements ProjectService {
             projectOperationLog.setOpTargetID(projectID);
             projectOperationLog.setOpTime(updateTime);
             projectOperationLog.setOpType(ProjectOperationLog.OP_TYPE_ADD);
-            projectOperationLog.setOpUerID(userID);
+            projectOperationLog.setOpUserID(userID);
             projectOperationLogMapper.addProjectOperationLog(projectOperationLog);
 
             // 返回信息

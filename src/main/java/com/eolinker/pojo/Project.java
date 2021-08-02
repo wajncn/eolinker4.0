@@ -1,5 +1,7 @@
 package com.eolinker.pojo;
 
+import lombok.*;
+
 import java.sql.Timestamp;
 import java.util.List;
 
@@ -19,6 +21,7 @@ import java.util.List;
  * @link https://www.eolinker.com/
  * @package eolinker
  */
+@Data
 public class Project {
     private Integer projectID;//项目ID
     private Integer projectType;//项目类型
@@ -28,46 +31,6 @@ public class Project {
     private List<Partner> partners;//项目成员
     private Integer userType;
 
-    public Integer getProjectID() {
-        return projectID;
-    }
-
-    public void setProjectID(Integer projectID) {
-        this.projectID = projectID;
-    }
-
-    public Integer getProjectType() {
-        return projectType;
-    }
-
-    public void setProjectType(Integer projectType) {
-        this.projectType = projectType;
-    }
-
-    public String getProjectName() {
-        return projectName;
-    }
-
-    public void setProjectName(String projectName) {
-        this.projectName = projectName;
-    }
-
-    public Timestamp getProjectUpdateTime() {
-        return projectUpdateTime;
-    }
-
-    public void setProjectUpdateTime(Timestamp projectUpdateTime) {
-        this.projectUpdateTime = projectUpdateTime;
-    }
-
-    public String getProjectVersion() {
-        return projectVersion;
-    }
-
-    public void setProjectVersion(String projectVersion) {
-        this.projectVersion = projectVersion;
-    }
-
     public List<Partner> getProjectMembers() {
         return partners;
     }
@@ -76,11 +39,4 @@ public class Project {
         this.partners = partners;
     }
 
-    public Integer getUserType() {
-        return userType;
-    }
-
-    public void setUserType(Integer userType) {
-        this.userType = userType;
-    }
 }

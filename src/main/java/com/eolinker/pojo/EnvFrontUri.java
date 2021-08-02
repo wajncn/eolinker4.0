@@ -1,5 +1,7 @@
 package com.eolinker.pojo;
 
+import lombok.*;
+
 /**
  * 环境URI
  *
@@ -16,44 +18,13 @@ package com.eolinker.pojo;
  * @link https://www.eolinker.com/
  * @package eolinker
  */
+@Data
 public class EnvFrontUri {
 
     private Integer envID;//环境ID
     private String uri;//环境路径
     private Integer uriID;//环境路径ID
     private Integer applyProtocol;//请求协议
-
-    public Integer getEnvID() {
-        return envID;
-    }
-
-    public void setEnvID(Integer envID) {
-        this.envID = envID;
-    }
-
-    public String getUri() {
-        return uri;
-    }
-
-    public void setUri(String uri) {
-        this.uri = uri;
-    }
-
-    public Integer getUriID() {
-        return uriID;
-    }
-
-    public void setUriID(Integer uriID) {
-        this.uriID = uriID;
-    }
-
-    public Integer getApplyProtocol() {
-        return applyProtocol;
-    }
-
-    public void setApplyProtocol(Integer applyProtocol) {
-        this.applyProtocol = applyProtocol;
-    }
 
 
 }

@@ -94,7 +94,7 @@ public class StatusCodeServiceImpl implements StatusCodeService {
             else {
                 ProjectOperationLog projectOperationLog = new ProjectOperationLog();
                 projectOperationLog.setOpProjectID(projectID);
-                projectOperationLog.setOpUerID(userID);
+                projectOperationLog.setOpUserID(userID);
                 projectOperationLog.setOpTarget(ProjectOperationLog.OP_TARGET_STATUS_CODE);
                 projectOperationLog.setOpTargetID(statusCode.getCodeID());
                 projectOperationLog.setOpType(ProjectOperationLog.OP_TYPE_ADD);
@@ -126,7 +126,7 @@ public class StatusCodeServiceImpl implements StatusCodeService {
 
                 ProjectOperationLog projectOperationLog = new ProjectOperationLog();
                 projectOperationLog.setOpProjectID(projectID);
-                projectOperationLog.setOpUerID(userID);
+                projectOperationLog.setOpUserID(userID);
                 projectOperationLog.setOpTarget(ProjectOperationLog.OP_TARGET_STATUS_CODE);
                 projectOperationLog.setOpTargetID(codeID);
                 projectOperationLog.setOpType(ProjectOperationLog.OP_TYPE_DELETE);
@@ -163,7 +163,7 @@ public class StatusCodeServiceImpl implements StatusCodeService {
 
             ProjectOperationLog projectOperationLog = new ProjectOperationLog();
             projectOperationLog.setOpProjectID(projectID);
-            projectOperationLog.setOpUerID(userID);
+            projectOperationLog.setOpUserID(userID);
             projectOperationLog.setOpTarget(ProjectOperationLog.OP_TARGET_STATUS_CODE);
             projectOperationLog.setOpTargetID(0);
             projectOperationLog.setOpType(ProjectOperationLog.OP_TYPE_DELETE);
@@ -258,7 +258,7 @@ public class StatusCodeServiceImpl implements StatusCodeService {
             else {
                 ProjectOperationLog projectOperationLog = new ProjectOperationLog();
                 projectOperationLog.setOpProjectID(projectID);
-                projectOperationLog.setOpUerID(userID);
+                projectOperationLog.setOpUserID(userID);
                 projectOperationLog.setOpTarget(ProjectOperationLog.OP_TARGET_STATUS_CODE);
                 projectOperationLog.setOpTargetID(statusCode.getCodeID());
                 projectOperationLog.setOpType(ProjectOperationLog.OP_TYPE_UPDATE);
@@ -341,7 +341,7 @@ public class StatusCodeServiceImpl implements StatusCodeService {
             projectOperationLog.setOpTargetID(groupID);
             projectOperationLog.setOpTime(updateTime);
             projectOperationLog.setOpType(ProjectOperationLog.OP_TYPE_ADD);
-            projectOperationLog.setOpUerID(userID);
+            projectOperationLog.setOpUserID(userID);
             projectOperationLogMapper.addProjectOperationLog(projectOperationLog);
             return true;
         } catch (Exception e) {

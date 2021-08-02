@@ -1,5 +1,7 @@
 package com.eolinker.pojo;
 
+import lombok.*;
+
 /**
  * 数据库协作人员
  *
@@ -16,6 +18,7 @@ package com.eolinker.pojo;
  * @link https://www.eolinker.com/
  * @package eolinker
  */
+@Data
 public class ConnDatabase {
 
     private int connID;//关联ID
@@ -24,53 +27,5 @@ public class ConnDatabase {
     private int userType;//成员权限类型
     private int inviteUserID;//邀请者ID
     private String partnerNickName;//备注
-
-    public int getConnID() {
-        return connID;
-    }
-
-    public void setConnID(int connID) {
-        this.connID = connID;
-    }
-
-    public int getDbID() {
-        return dbID;
-    }
-
-    public void setDbID(int dbID) {
-        this.dbID = dbID;
-    }
-
-    public int getUserID() {
-        return userID;
-    }
-
-    public void setUserID(int userID) {
-        this.userID = userID;
-    }
-
-    public int getUserType() {
-        return userType;
-    }
-
-    public void setUserType(int userType) {
-        this.userType = userType;
-    }
-
-    public int getInviteUserID() {
-        return inviteUserID;
-    }
-
-    public void setInviteUserID(int inviteUserID) {
-        this.inviteUserID = inviteUserID;
-    }
-
-    public String getPartnerNickName() {
-        return partnerNickName;
-    }
-
-    public void setPartnerNickName(String partnerNickName) {
-        this.partnerNickName = partnerNickName;
-    }
 
 }

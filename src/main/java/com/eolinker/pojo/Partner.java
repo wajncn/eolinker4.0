@@ -1,5 +1,7 @@
 package com.eolinker.pojo;
 
+import lombok.*;
+
 /**
  * 项目协作成员
  *
@@ -16,6 +18,7 @@ package com.eolinker.pojo;
  * @link https://www.eolinker.com/
  * @package eolinker
  */
+@Data
 public class Partner {
     private Integer connID;//关联ID
     private Integer projectID;//项目Id
@@ -25,59 +28,4 @@ public class Partner {
     private String partnerNickName;//备注
     private Project project;//项目
 
-    public Integer getConnID() {
-        return connID;
-    }
-
-    public void setConnID(Integer connID) {
-        this.connID = connID;
-    }
-
-    public Integer getProjectID() {
-        return projectID;
-    }
-
-    public void setProjectID(Integer projectID) {
-        this.projectID = projectID;
-    }
-
-    public Integer getUserID() {
-        return userID;
-    }
-
-    public void setUserID(Integer userID) {
-        this.userID = userID;
-    }
-
-    public Integer getUserType() {
-        return userType;
-    }
-
-    public void setUserType(Integer userType) {
-        this.userType = userType;
-    }
-
-    public Integer getInviteUserID() {
-        return inviteUserID;
-    }
-
-    public void setInviteUserID(Integer inviteUserID) {
-        this.inviteUserID = inviteUserID;
-    }
-
-    public String getPartnerNickName() {
-        return partnerNickName;
-    }
-
-    public void setPartnerNickName(String partnerNickName) {
-        this.partnerNickName = partnerNickName;
-    }
-
-    public Project getProject() {
-        return project;
-    }
-
-    public void setProject(Project project) {
-        this.project = project;
-    }
 }

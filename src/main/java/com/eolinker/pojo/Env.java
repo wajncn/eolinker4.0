@@ -1,5 +1,7 @@
 package com.eolinker.pojo;
 
+import lombok.*;
+
 /**
  * 环境bean
  *
@@ -16,36 +18,12 @@ package com.eolinker.pojo;
  * @link https://www.eolinker.com/
  * @package eolinker
  */
+@Data
 public class Env {
 
     private Integer envID;//环境ID
     private String envName;//环境名称
     private Integer projectID;//项目ID
-
-
-    public Integer getEnvID() {
-        return envID;
-    }
-
-    public void setEnvID(Integer envID) {
-        this.envID = envID;
-    }
-
-    public String getEnvName() {
-        return envName;
-    }
-
-    public void setEnvName(String envName) {
-        this.envName = envName;
-    }
-
-    public Integer getProjectID() {
-        return projectID;
-    }
-
-    public void setProjectID(Integer projectID) {
-        this.projectID = projectID;
-    }
 
 
 }

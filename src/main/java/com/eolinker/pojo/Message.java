@@ -1,5 +1,7 @@
 package com.eolinker.pojo;
 
+import lombok.*;
+
 import java.sql.Timestamp;
 
 /**
@@ -18,6 +20,7 @@ import java.sql.Timestamp;
  * @link https://www.eolinker.com/
  * @package eolinker
  */
+@Data
 public class Message {
     private Integer msgID;//消息ID
     private Integer toUserID;//接收者ID
@@ -29,75 +32,4 @@ public class Message {
     private Integer isRead;//是否已读
     private String otherMsg;//其他内容
 
-    public Integer getMsgID() {
-        return msgID;
-    }
-
-    public void setMsgID(Integer msgID) {
-        this.msgID = msgID;
-    }
-
-    public Integer getToUserID() {
-        return toUserID;
-    }
-
-    public void setToUserID(Integer toUserID) {
-        this.toUserID = toUserID;
-    }
-
-    public Integer getFromUserID() {
-        return fromUserID;
-    }
-
-    public void setFromUserID(Integer fromUserID) {
-        this.fromUserID = fromUserID;
-    }
-
-    public Timestamp getMsgSendTime() {
-        return msgSendTime;
-    }
-
-    public void setMsgSendTime(Timestamp msgSendTime) {
-        this.msgSendTime = msgSendTime;
-    }
-
-    public Integer getMsgType() {
-        return msgType;
-    }
-
-    public void setMsgType(Integer msgType) {
-        this.msgType = msgType;
-    }
-
-    public String getSummary() {
-        return summary;
-    }
-
-    public void setSummary(String summary) {
-        this.summary = summary;
-    }
-
-    public String getMsg() {
-        return msg;
-    }
-
-    public void setMsg(String msg) {
-        this.msg = msg;
-    }
-
-    public Integer getIsRead() {
-        return isRead;
-    }
-
-    public void setIsRead(Integer isRead) {
-        this.isRead = isRead;
-    }
-
-    public String getOtherMsg() {
-        return otherMsg;
-    }
-
-    public void setOtherMsg(String otherMsg) {
-        this.otherMsg = otherMsg;
-    }
 }

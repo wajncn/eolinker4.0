@@ -1,5 +1,7 @@
 package com.eolinker.pojo;
 
+import lombok.*;
+
 /**
  * 状态码分组
  *
@@ -16,6 +18,7 @@ package com.eolinker.pojo;
  * @link https://www.eolinker.com/
  * @package eolinker
  */
+@Data
 public class StatusCodeGroup {
     private Integer groupID;//分组ID
     private String groupName;//分组名称
@@ -23,43 +26,4 @@ public class StatusCodeGroup {
     private Integer parentGroupID;//父分组ID
     private Integer isChild;//是否是子分组，0表示是，1表示不是
 
-    public Integer getGroupID() {
-        return groupID;
-    }
-
-    public void setGroupID(Integer groupID) {
-        this.groupID = groupID;
-    }
-
-    public String getGroupName() {
-        return groupName;
-    }
-
-    public void setGroupName(String groupName) {
-        this.groupName = groupName;
-    }
-
-    public Integer getProjectID() {
-        return projectID;
-    }
-
-    public void setProjectID(Integer projectID) {
-        this.projectID = projectID;
-    }
-
-    public Integer getParentGroupID() {
-        return parentGroupID;
-    }
-
-    public void setParentGroupID(Integer parentGroupID) {
-        this.parentGroupID = parentGroupID;
-    }
-
-    public Integer getIsChild() {
-        return isChild;
-    }
-
-    public void setIsChild(Integer isChild) {
-        this.isChild = isChild;
-    }
 }

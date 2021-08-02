@@ -1,5 +1,7 @@
 package com.eolinker.pojo;
 
+import lombok.*;
+
 /**
  * 状态码
  *
@@ -16,41 +18,11 @@ package com.eolinker.pojo;
  * @link https://www.eolinker.com/
  * @package eolinker
  */
+@Data
 public class StatusCode {
     private Integer codeID;// 状态码ID
     private String code;// 状态码名称
     private String codeDescription;// 状态码描述
     private Integer groupID;// 状态码分组ID
 
-    public Integer getCodeID() {
-        return codeID;
-    }
-
-    public void setCodeID(Integer codeID) {
-        this.codeID = codeID;
-    }
-
-    public String getCode() {
-        return code;
-    }
-
-    public void setCode(String code) {
-        this.code = code;
-    }
-
-    public String getCodeDescription() {
-        return codeDescription;
-    }
-
-    public void setCodeDescription(String codeDescription) {
-        this.codeDescription = codeDescription;
-    }
-
-    public Integer getGroupID() {
-        return groupID;
-    }
-
-    public void setGroupID(Integer groupID) {
-        this.groupID = groupID;
-    }
 }

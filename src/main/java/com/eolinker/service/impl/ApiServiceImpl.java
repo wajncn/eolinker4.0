@@ -193,7 +193,7 @@ public class ApiServiceImpl implements ApiService {
             projectOperationLog.setOpTargetID(api.getApiID());
             projectOperationLog.setOpTime(updateTime);
             projectOperationLog.setOpType(ProjectOperationLog.OP_TYPE_ADD);
-            projectOperationLog.setOpUerID(api.getUpdateUserID());
+            projectOperationLog.setOpUserID(api.getUpdateUserID());
             projectOperationLogMapper.addProjectOperationLog(projectOperationLog);
             return api.getApiID();
 
@@ -356,7 +356,7 @@ public class ApiServiceImpl implements ApiService {
             projectOperationLog.setOpTargetID(api.getApiID());
             projectOperationLog.setOpTime(updateTime);
             projectOperationLog.setOpType(ProjectOperationLog.OP_TYPE_ADD);
-            projectOperationLog.setOpUerID(api.getUpdateUserID());
+            projectOperationLog.setOpUserID(api.getUpdateUserID());
             projectOperationLogMapper.addProjectOperationLog(projectOperationLog);
             return true;
 
@@ -391,7 +391,7 @@ public class ApiServiceImpl implements ApiService {
             projectOperationLog.setOpTargetID(projectID);
             projectOperationLog.setOpTime(updateTime);
             projectOperationLog.setOpType(ProjectOperationLog.OP_TYPE_DELETE);
-            projectOperationLog.setOpUerID(userID);
+            projectOperationLog.setOpUserID(userID);
             projectOperationLogMapper.addProjectOperationLog(projectOperationLog);
             return true;
         }
@@ -425,7 +425,7 @@ public class ApiServiceImpl implements ApiService {
             projectOperationLog.setOpTargetID(projectID);
             projectOperationLog.setOpTime(updateTime);
             projectOperationLog.setOpType(ProjectOperationLog.OP_TYPE_OTHERS);
-            projectOperationLog.setOpUerID(userID);
+            projectOperationLog.setOpUserID(userID);
             projectOperationLogMapper.addProjectOperationLog(projectOperationLog);
             return true;
         }
@@ -463,7 +463,7 @@ public class ApiServiceImpl implements ApiService {
             projectOperationLog.setOpTargetID(projectID);
             projectOperationLog.setOpTime(updateTime);
             projectOperationLog.setOpType(ProjectOperationLog.OP_TYPE_DELETE);
-            projectOperationLog.setOpUerID(userID);
+            projectOperationLog.setOpUserID(userID);
             projectOperationLogMapper.addProjectOperationLog(projectOperationLog);
             return true;
         }
@@ -488,7 +488,7 @@ public class ApiServiceImpl implements ApiService {
             projectOperationLog.setOpTargetID(projectID);
             projectOperationLog.setOpTime(updateTime);
             projectOperationLog.setOpType(ProjectOperationLog.OP_TYPE_DELETE);
-            projectOperationLog.setOpUerID(userID);
+            projectOperationLog.setOpUserID(userID);
             projectOperationLogMapper.addProjectOperationLog(projectOperationLog);
             return true;
         } else
@@ -676,7 +676,7 @@ public class ApiServiceImpl implements ApiService {
             projectOperationLog.setOpTargetID(projectID);
             projectOperationLog.setOpTime(updateTime);
             projectOperationLog.setOpType(ProjectOperationLog.OP_TYPE_UPDATE);
-            projectOperationLog.setOpUerID(userID);
+            projectOperationLog.setOpUserID(userID);
             projectOperationLogMapper.addProjectOperationLog(projectOperationLog);
             return true;
         } else
@@ -720,7 +720,7 @@ public class ApiServiceImpl implements ApiService {
             projectOperationLog.setOpTargetID(projectID);
             projectOperationLog.setOpTime(updateTime);
             projectOperationLog.setOpType(ProjectOperationLog.OP_TYPE_DELETE);
-            projectOperationLog.setOpUerID(userID);
+            projectOperationLog.setOpUserID(userID);
             projectOperationLogMapper.addProjectOperationLog(projectOperationLog);
             return true;
         } else
@@ -858,7 +858,7 @@ public class ApiServiceImpl implements ApiService {
             projectOperationLog.setOpTargetID(projectID);
             projectOperationLog.setOpTime(t);
             projectOperationLog.setOpType(ProjectOperationLog.OP_TYPE_UPDATE);
-            projectOperationLog.setOpUerID(userID);
+            projectOperationLog.setOpUserID(userID);
             projectOperationLogMapper.addProjectOperationLog(projectOperationLog);
             return true;
         }
@@ -894,7 +894,7 @@ public class ApiServiceImpl implements ApiService {
             projectOperationLog.setOpTargetID(projectID);
             projectOperationLog.setOpTime(updateTime);
             projectOperationLog.setOpType(ProjectOperationLog.OP_TYPE_UPDATE);
-            projectOperationLog.setOpUerID(userID);
+            projectOperationLog.setOpUserID(userID);
             projectOperationLogMapper.addProjectOperationLog(projectOperationLog);
             return true;
         }
@@ -938,7 +938,7 @@ public class ApiServiceImpl implements ApiService {
         projectOperationLog.setOpTargetID(projectID);
         projectOperationLog.setOpTime(updateTime);
         projectOperationLog.setOpType(ProjectOperationLog.OP_TYPE_OTHERS);
-        projectOperationLog.setOpUerID(userID);
+        projectOperationLog.setOpUserID(userID);
         projectOperationLogMapper.addProjectOperationLog(projectOperationLog);
         return apiList;
     }
@@ -1068,7 +1068,7 @@ public class ApiServiceImpl implements ApiService {
             projectOperationLog.setOpTargetID(projectID);
             projectOperationLog.setOpTime(updateTime);
             projectOperationLog.setOpType(ProjectOperationLog.OP_TYPE_ADD);
-            projectOperationLog.setOpUerID(userID);
+            projectOperationLog.setOpUserID(userID);
             projectOperationLogMapper.addProjectOperationLog(projectOperationLog);
             return true;
         }

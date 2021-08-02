@@ -72,7 +72,7 @@ public class AutomatedTestCaseSingleServiceImpl implements AutomatedTestCaseSing
             projectOperationLog.setOpTargetID(automatedTestCaseSingle.getConnID());
             projectOperationLog.setOpTime(nowTime);
             projectOperationLog.setOpType(ProjectOperationLog.OP_TYPE_ADD);
-            projectOperationLog.setOpUerID(userID);
+            projectOperationLog.setOpUserID(userID);
             projectOperationLogMapper.addProjectOperationLog(projectOperationLog);
             return automatedTestCaseSingle.getConnID();
         } else {
@@ -99,7 +99,7 @@ public class AutomatedTestCaseSingleServiceImpl implements AutomatedTestCaseSing
             projectOperationLog.setOpTargetID(automatedTestCaseSingle.getConnID());
             projectOperationLog.setOpTime(nowTime);
             projectOperationLog.setOpType(ProjectOperationLog.OP_TYPE_UPDATE);
-            projectOperationLog.setOpUerID(userID);
+            projectOperationLog.setOpUserID(userID);
             projectOperationLogMapper.addProjectOperationLog(projectOperationLog);
             return true;
         }
@@ -169,7 +169,7 @@ public class AutomatedTestCaseSingleServiceImpl implements AutomatedTestCaseSing
             projectOperationLog.setOpTargetID(projectID);
             projectOperationLog.setOpTime(nowTime);
             projectOperationLog.setOpType(ProjectOperationLog.OP_TYPE_ADD);
-            projectOperationLog.setOpUerID(userID);
+            projectOperationLog.setOpUserID(userID);
             projectOperationLogMapper.addProjectOperationLog(projectOperationLog);
             return true;
         }

@@ -128,7 +128,7 @@ public class PartnerServiceImpl implements PartnerService {
             projectOperationLog.setOpTargetID(userID);
             projectOperationLog.setOpTime(nowTime);
             projectOperationLog.setOpType(ProjectOperationLog.OP_TYPE_ADD);
-            projectOperationLog.setOpUerID(inviteUserID);
+            projectOperationLog.setOpUserID(inviteUserID);
             projectOperationLogMapper.addProjectOperationLog(projectOperationLog);
             return partner.getConnID();
         } else
@@ -187,7 +187,7 @@ public class PartnerServiceImpl implements PartnerService {
             projectOperationLog.setOpTargetID(new Integer(partnerInfo.get("userID").toString()));
             projectOperationLog.setOpTime(nowTime);
             projectOperationLog.setOpType(ProjectOperationLog.OP_TYPE_DELETE);
-            projectOperationLog.setOpUerID(userID);
+            projectOperationLog.setOpUserID(userID);
             projectOperationLogMapper.addProjectOperationLog(projectOperationLog);
             return true;
         }
@@ -254,7 +254,7 @@ public class PartnerServiceImpl implements PartnerService {
             projectOperationLog.setOpTargetID(userID);
             projectOperationLog.setOpTime(nowTime);
             projectOperationLog.setOpType(ProjectOperationLog.OP_TYPE_DELETE);
-            projectOperationLog.setOpUerID(userID);
+            projectOperationLog.setOpUserID(userID);
             projectOperationLogMapper.addProjectOperationLog(projectOperationLog);
             return true;
         }
@@ -285,7 +285,7 @@ public class PartnerServiceImpl implements PartnerService {
             projectOperationLog.setOpTargetID(Integer.valueOf(partnerInfo.get("userID").toString()));
             projectOperationLog.setOpTime(nowTime);
             projectOperationLog.setOpType(ProjectOperationLog.OP_TYPE_UPDATE);
-            projectOperationLog.setOpUerID(userID);
+            projectOperationLog.setOpUserID(userID);
             projectOperationLogMapper.addProjectOperationLog(projectOperationLog);
             return true;
         } else
@@ -331,7 +331,7 @@ public class PartnerServiceImpl implements PartnerService {
             projectOperationLog.setOpTargetID(Integer.valueOf(partnerInfo.get("userID").toString()));
             projectOperationLog.setOpTime(nowTime);
             projectOperationLog.setOpType(ProjectOperationLog.OP_TYPE_UPDATE);
-            projectOperationLog.setOpUerID(userID);
+            projectOperationLog.setOpUserID(userID);
             projectOperationLogMapper.addProjectOperationLog(projectOperationLog);
             return true;
         } else

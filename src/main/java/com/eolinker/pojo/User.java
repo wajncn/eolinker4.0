@@ -1,5 +1,7 @@
 package com.eolinker.pojo;
 
+import lombok.*;
+
 /**
  * 用户
  *
@@ -16,42 +18,11 @@ package com.eolinker.pojo;
  * @link https://www.eolinker.com/
  * @package eolinker
  */
+@Data
 public class User {
     private Integer userID;//用户ID
     private String userName;//用户账号
     private String userPassword;//用户密码
     private String userNickName;//用户昵称
-
-    public Integer getUserID() {
-        return userID;
-    }
-
-    public void setUserID(Integer userID) {
-        this.userID = userID;
-    }
-
-    public String getUserName() {
-        return userName;
-    }
-
-    public void setUserName(String userName) {
-        this.userName = userName;
-    }
-
-    public String getUserPassword() {
-        return userPassword;
-    }
-
-    public void setUserPassword(String userPassword) {
-        this.userPassword = userPassword;
-    }
-
-    public String getUserNickName() {
-        return userNickName;
-    }
-
-    public void setUserNickName(String userNickName) {
-        this.userNickName = userNickName;
-    }
 
 }
