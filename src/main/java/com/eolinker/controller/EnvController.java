@@ -11,6 +11,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.*;
 
@@ -75,9 +76,6 @@ public class EnvController {
      *
      * @param envName
      * @param frontURI
-     * @param headers
-     * @param params
-     * @param additionalParams
      * @return
      */
     @ResponseBody
@@ -185,13 +183,12 @@ public class EnvController {
 
     /**
      * 修改项目环境
-     *
-     * @param projectID
+     * @param envID
      * @param envName
      * @param frontURI
-     * @param headers
-     * @param params
-     * @param additionalParams
+     * @param headersString
+     * @param paramsString
+     * @param additionalParamsString
      * @return
      */
     @ResponseBody

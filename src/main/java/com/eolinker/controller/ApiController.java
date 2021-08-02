@@ -53,11 +53,14 @@ public class ApiController {
     @Resource
     private ApiGroupService apiGroupService;
 
+
     /**
      * 添加接口
-     *
      * @param request
-     * @param project
+     * @param api
+     * @param apiHeader
+     * @param apiRequestParam
+     * @param apiResultParam
      * @return
      */
     @ResponseBody
@@ -98,7 +101,6 @@ public class ApiController {
      * 修改接口
      *
      * @param request
-     * @param project
      * @return
      */
     @ResponseBody
@@ -142,7 +144,6 @@ public class ApiController {
      * 批量删除api,将其移入回收站
      *
      * @param request
-     * @param project
      * @return
      */
     @ResponseBody
@@ -169,7 +170,6 @@ public class ApiController {
      * 批量恢复接口
      *
      * @param request
-     * @param project
      * @return
      */
     @ResponseBody
@@ -198,7 +198,6 @@ public class ApiController {
      * 切断删除接口
      *
      * @param request
-     * @param project
      * @return
      */
     @ResponseBody
