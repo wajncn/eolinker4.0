@@ -8,8 +8,8 @@ import com.eolinker.service.ApiService;
 import com.eolinker.service.ProjectService;
 import com.eolinker.service.TestHistoryService;
 import com.eolinker.util.Proxy;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
-import org.apache.log4j.Logger;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -42,9 +42,8 @@ import java.util.*;
  */
 @Controller
 @RequestMapping("/Test")
+@Slf4j
 public class TestController {
-
-    private static final Logger logger = Logger.getLogger(TestController.class);
 
     @Resource
     private TestHistoryService testHistoryService;
@@ -64,7 +63,7 @@ public class TestController {
     @RequestMapping(value = "/get", method = RequestMethod.POST)
     public Map<String, Object> get(HttpServletRequest request, int apiProtocol, String URL, String headers,
                                    String params, Integer apiID, Integer projectID, int requestType) {
-        logger.info("---------get start-----------");
+        log.info("---------get start-----------");
         Map<String, Object> map = new HashMap<String, Object>();
         if (URL == null || URL.equals("") || URL.length() < 0) {
             map.put("statusCode", "210001");
@@ -148,7 +147,7 @@ public class TestController {
             }
 
         }
-        logger.info("---------get end-----------");
+        log.info("---------get end-----------");
         return map;
     }
 
@@ -261,7 +260,7 @@ public class TestController {
     public Map<String, Object> post(HttpServletRequest request, int apiProtocol, String URL, String headers,
                                     String params, Integer apiID, Integer projectID, int requestType, String apiMethodType, String apiMethod) {
         Map<String, Object> map = new HashMap<String, Object>();
-        logger.info("----------post start-------------");
+        log.info("----------post start-------------");
         if (URL == null || URL.equals("") || URL.length() < 0) {
             map.put("statusCode", "210001");
         } else if (projectID == null || projectID < 1) {
@@ -292,7 +291,7 @@ public class TestController {
              */
             if (StringUtils.isEmpty(apiMethod) || StringUtils.isEmpty(apiMethodType)) {
                 Api api = apiService.getApiInfo(projectID, apiID);
-                logger.info("API info: " + JSON.toJSON(api));
+                log.info("API info: " + JSON.toJSON(api));
                 if (api != null) {
                     apiMethod = api.getApiMethod();
                     apiMethodType = api.getApiMethodType();
@@ -331,8 +330,8 @@ public class TestController {
             if (StringUtils.isEmpty(apiMethodType) || "0".equals(apiMethodType)) {
                 paramData = JSONObject.parseObject(params);
             }
-            logger.info("params info: " + params);
-            logger.info("paramData info: " + paramData);
+            log.info("params info: " + params);
+            log.info("paramData info: " + paramData);
 
             List<Map<String, String>> paramList = new ArrayList<Map<String, String>>();
             if (paramData != null && !paramData.isEmpty()) {
@@ -389,8 +388,8 @@ public class TestController {
             }
 
         }
-        logger.info("post return map :" + JSON.toJSONString(map));
-        logger.info("----------post end-------------");
+        log.info("post return map :" + JSON.toJSONString(map));
+        log.info("----------post end-------------");
         return map;
     }
 

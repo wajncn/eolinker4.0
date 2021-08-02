@@ -6,7 +6,7 @@ import com.eolinker.pojo.Partner;
 import com.eolinker.service.ApiGroupService;
 import com.eolinker.service.ApiService;
 import com.eolinker.service.ProjectService;
-import org.apache.log4j.Logger;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.ResourceUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -43,10 +43,8 @@ import java.util.Map;
  */
 @Controller
 @RequestMapping("/Api")
+@Slf4j
 public class ApiController {
-
-    private static final Logger log = Logger.getLogger(ApiController.class);
-
 
     @Resource
     private ApiService apiService;
